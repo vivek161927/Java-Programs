@@ -1,0 +1,27 @@
+package demoProject;
+
+import java.util.Scanner;
+
+public class CountWord {
+	
+	static int wordCount(String s) {
+		int count=0;
+		for (int j = 0; j < s.length(); j++) {
+			
+			if(s.charAt(j) != ' ') {
+				count++;
+				
+			}
+		}
+		return count;
+	}
+	
+	
+	
+   public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	    String s=sc.nextLine();
+	    System.out.println(wordCount(s));
+	    sc.close();
+}
+}
